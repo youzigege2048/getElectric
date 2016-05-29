@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.getelectric_fragment"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:allowTaskReparenting="true"
+        android:icon="@drawable/elec"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55ed4c05e0f55aafc800492f" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <activity
+            android:name="com.getelectric_pro.main.MainActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.getelectric_pro.main.ElecMain"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.getelectric_pro.login.Login"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.getelectric_pro.database.bind_info"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.getelectric_pro.login.login_about"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+</manifest>

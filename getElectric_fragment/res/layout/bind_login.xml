@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:textColor="#000000" >
+
+        <Spinner
+            android:id="@+id/xml_drxiaoqu"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearance" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp" >
+
+        <Spinner
+            android:id="@+id/xml_drlou"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearance" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp" >
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/xml_txtRoomid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearance"
+            bootstrapbutton:be_roundedCorners="true"
+            bootstrapbutton:be_state="notheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"
+        android:gravity="center" >
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/xml_btn_bindclose"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            bootstrapbutton:bb_icon_left="fa-arrow-circle-left"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_type="inverse" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/xml_btnbind"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            bootstrapbutton:bb_icon_left="fa-floppy-o"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_type="default" />
+    </LinearLayout>
+
+</LinearLayout>
