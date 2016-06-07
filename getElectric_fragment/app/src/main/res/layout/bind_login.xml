@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:textColor="#000000">
+
+        <Spinner
+            android:id="@+id/xml_drxiaoqu"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearance" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp">
+
+        <Spinner
+            android:id="@+id/xml_drlou"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearance" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp">
+
+        <EditText
+            android:id="@+id/xml_txtRoomid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearance" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/xml_btn_bindclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/btnshape" />
+
+        <Button
+            android:id="@+id/xml_btnbind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/btnshape" />
+    </LinearLayout>
+
+</LinearLayout>
